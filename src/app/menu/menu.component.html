@@ -1,9 +1,15 @@
-<header>
-    <img src="assets/img/Logo_1.png" alt="">
-    <div>
+<header [class.headerDark]="darkMode">
+    
+      
+    
+    
+    <img *ngIf="!darkMode" routerLink="/" src="assets/img/Logo_1.png" alt="">
+    <img *ngIf="darkMode" routerLink="/" src="assets/img/Logo_1.png" alt="">
+
+    <div [class.darkLinks]="darkMode">
         <a href="#">My Work</a>
         <a href="#">About Me</a>
         <a href="#">Contact</a>
-        <a href="#">Impressum</a>
+        <a routerLink="disclaimer" >Disclaimer</a>
     </div>
 </header>
