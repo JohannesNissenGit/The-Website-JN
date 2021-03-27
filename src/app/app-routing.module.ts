@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 
 const routes: Routes = [
   { path: '' , component: SlideshowComponent},
- { path: 'disclaimer' , component: DisclaimerComponent}
+ { path: 'disclaimer' , component: DisclaimerComponent},
+ { path: 'data-protection' , component: DataProtectionComponent}
 
 ];
 
